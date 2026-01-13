@@ -1,330 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Resume - Start Bootstrap Theme</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.5.2/js/all.js" crossorigin="anonymous"></script>
-        <script>
-            function show(shown, hidden) {
-            document.getElementById(shown).style.display='block';
-            document.getElementById(hidden).style.display='none';
-            return false;}
-        </script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
 
-          <script type="text/javascript" src="https://www.free-counters.org/count/fsb7"></script><br>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Resume - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.5.2/js/all.js" crossorigin="anonymous"></script>
+    <script>
+        function show(shown, hidden) {
+            document.getElementById(shown).style.display = 'block';
+            document.getElementById(hidden).style.display = 'none';
+            return false;
+        }
+    </script>
 
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Enes DURAN</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#various">Various Writings</a></li>
-		    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certificates">Certificates</a></li>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const URLS = {
+                mjb_profile: "https://is.mpg.de/ps/person/black",
+                gpm_profile: "https://virtualhumans.mpi-inf.mpg.de/people/pons-moll.html",
+                ag_profile: "ttps://www.cvlibs.net/",
+                mk_profile: "https://scholar.google.com.tr/citations?user=H4ioz9YAAAAJ&hl=en",
+                ot_profile: "https://otaheri.github.io/",
+                vc_profile: "https://vchoutas.github.io/",
+
+                fusion_weblink: "https://arxiv.org/abs/2601.03959",
+                hmp_weblink: "https://hmp.is.tue.mpg.de/index.html"
+
+            };
+
+            document.querySelectorAll("[data-href]")
+                .forEach(a => a.href = URLS[a.dataset.href]);
+        });
+    </script>
+
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+
+    <script type="text/javascript" src="https://www.free-counters.org/count/fsb7"></script><br>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Enes DURAN</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                    src="assets/img/profile.jpg" alt="" /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#various">Various Writings</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certificates">Certificates</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    Enes
+                    <span class="text-primary">DURAN</span>
+                </h1>
+                <div class="lead mb-5">
+                    University of Tübingen, Tübingen / Germany·
+                    <a href="mailto:enes.duran@uni-tuebingen.de">enes.duran@uni-tuebingen.de</a>
+                </div>
+                <p class="lead mb-5">
+                    I am a PhD student working on Human-Object Interaction and its possible applications to Robotics.
+                    These span 3D Computer Vision, Virtual Humans, Human-Object Interaction, and Robust Reinforcement
+                    Learning. <br><br>
+
+                    I graduated with a Master's in Machine Learning at the <a
+                        href="https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/studium/studiengaenge/machine-learning/">University
+                        of Tübingen</a>.
+                    At the same time, I was a Research Assistant at the Perceiving Systems Department at the Max Planck
+                    Institute for Intelligent Systems.
+                    I had the chance to work under the supervision of <a data-href=mk_profile>Dr. Muhammed Kocabas</a>,
+                    <a data-href=ot_profile>Dr.
+                        Omid Taheri</a>, <a data-href=vc_profile>Dr. Vasileios Choutas</a>,
+                    and <a data-href=mjb_profile>Prof. Michael Black</a>. My focus has been
+                    on Human Pose and Shape Estimation and Hand-Object interaction. <br><br>
+                    
+                    During my bachelor years at <a href="https://ee.bilkent.edu.tr/en/">Bilkent University</a>, I
+                    studied sample-efficient Reinforcement Learning. <br><br>
+
+                </p>
+                <div class="social-icons">
+                    <a class="social-icon" href="https://www.linkedin.com/in/enes-duran/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://github.com/enesduran"><i class="fab fa-github"></i></a>
+                    <a class="social-icon" href="https://scholar.google.com/citations?user=fpGupDUAAAAJ&hl=en&oi=ao"><i
+                            class="fa-brands fa-google-scholar"></i></a>
+                    <a class="social-icon" href="https://x.com/enes_duran_"><i class="fab fa-twitter"></i></a>
+                </div>
+
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Experience</h2>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Student Researcher</h3>
+                        <div class="mb-3">Max Planck Institute for Intelligent Systems (Tübingen/Germany)</div>
+                        <p> Published papers on virtual humans. <a data-href=hmp_weblink> 1) </a> Developed
+                            motion prior model for hand pose estimation.
+                            <a data-href=fusion_weblink> 2) </a> Developed a generative model for Human-Object interaction.
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">July 2022 - July 2025</span></div>
+                </div>
+
+                
+
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Artificial Intelligence Engineer</h3>
+                        <div class="mb-3">DataBoss Security&Analytics (Ankara/Turkey)</div>
+                        <p>Developed several vision-based reinforcement learning models for <a 
+                            href=https://www.data-boss.com.tr/projects/>autonomous outdoor navigation</a>, 
+                            working in environments with uneven terrain, rocks, forests, and lakes. The project
+                            culminated in a successful delivery to the customer company, HAVELSAN, and provided 
+                            hands-on experience with Unreal Engine and AirSim.</p>
+
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">June 2021 - October 2021</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Internship</h3>
+                        <div class="mb-3">DataBoss Security&Analytics (Ankara/Turkey)</div>
+                        <p> Worked on the task of autonomous indoor navigation. Trained lidar-based RL navigation models
+                            for an AirSim-powered mini vehicle in realistic office environments.
+                            Deployed trained models on a prototype car named <a
+                                href="https://www.youtube.com/watch?v=FNKmX1HtDpo"> MARC</a> equipped with a NVIDIA
+                            Jetson Xavier Kit. </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">June 2020 - August 2020</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Internship</h3>
+                        <div class="mb-3">Meta Smart Factory (Ljubljana/Slovenia)</div>
+                        <p>Worked on a predictive maintenance project for production machines. Designed specialized
+                            filters for noise
+                            cancellation and smoothing real-time signals retrieved from the machines. Developed
+                            filters to detect both normal and defective products.</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">September 2019 - November 2019</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Part Time Engineer</h3>
+                        <div class="mb-3">Meta Smart Factory (Ljubljana/Slovenia)</div>
+                        <p>Increased the efficacy of ML algorithms used for estimating production machine condition and
+                            maintenance time via feature extraction.
+                            Found the most eligible features through extracting features representing the condition of
+                            production machines.
+                            Java, MATLAB and several libraries are used.</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">June 2019 - September 2019</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Undergraduate Researcher</h3>
+                        <div class="subheading mb-3"></div>
+                        <p>Conducted research on sample-efficient Reinforcement Learning. Co-authored 3 papers (1 first
+                            name) at <a href="https://ictai.computer.org/">IEEE ICTAI</a>.
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary"> February 2020 - August 2021</span></div>
+                </div>
+
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">University of Tübingen</h3>
+                        <div class="subheading mb-3">PhD</div>
+                        <div>Computer Vision</div>
+
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary"> 2025-current</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">University of Tübingen</h3>
+                        <div class="subheading mb-3">Master of Science</div>
+                        <div>Machine Learning</div>
+                        <p>GPA: 1.2</p>
+
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary"> 2021-2024</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Bilkent University</h3>
+                        <div class="subheading mb-3">Bachelor of Science</div>
+                        <div>Electrical and Electronics Engineering</div>
+                        <p>GPA: 3.79/4.00</p>
+
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary"> 2016-2021</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Bolu Science High School</h3>
+                        <div class="subheading mb-3">Math/Science Program</div>
+                        <p>GPA: 97.97/100.00</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">2012 - 2016</span></div>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Awards-->
+        <section class="resume-section" id="awards">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Awards</h2>
+                <ul class="fa-ul mb-0">
+
+                    <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        2024-2025 Deutschlandstipendium Recipient</li>
+
+                    <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        2016-2020 High Honor Student (GPA: 3.79/4.00)</li>
+
+                    <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        2016-Bronze Medal at TUBITAK National Science Olympiads (Physics)</li>
+
+                    <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        2016-LYS University Entrance Examination (Ranked 424/~1.600.000)</li>
+
+                    <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        2012-SBS High School Entrance Examination (Ranked 164/~1,000,000)</li>
+
+                    <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Semi Finalist of Bi-Fikir (Digital Transformation Hackathon)</li>
                 </ul>
             </div>
-        </nav>
+        </section>
 
 
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Enes
-                        <span class="text-primary">DURAN</span>
-                    </h1>
-                    <div class="lead mb-5">
-                        University of Tübingen, Tübingen / Germany·
-                        <a href="mailto:enes.duran@student.uni-tuebingen.de">enes.duran@student.uni-tuebingen.de</a>
-                    </div>
-                    <p class="lead mb-5">I am a Machine Learning master's student at the <a href="https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/studium/studiengaenge/machine-learning/">University of Tübingen</a>. At the same time, I am a research assistant in the Perceiving Systems Department at the Max Planck Institute for Intelligent Systems. My research interests span 3D Computer Vision, Virtual Humans, Human-Object Interaction, and robust Reinforcement Learning. <br> <br>
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Skills</h2>
 
-                        During my bachelor years at <a href="https://ee.bilkent.edu.tr/en/">Bilkent University</a>, I studied sample-efficient Reinforcement Learning. Throughout my master's studies, my focus has been on Human Pose and Shape estimation and Hand-Object interaction. <br><br>
-                        
-                        In my free time, I enjoy swimming, bouldering, and playing chess.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/enes-duran/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/enesduran"><i class="fab fa-github"></i></a> 
-                        <a class="social-icon" href="https://scholar.google.com/citations?user=fpGupDUAAAAJ&hl=en&oi=ao"><i class="fa-brands fa-google-scholar"></i></a> 
-                        <a class="social-icon" href="https://beyinsizler.net/author/enesduran/"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
+                <div class="subheading mb-3"></div>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><b>Programming Languages: </b>Python, Java,
+                    MATLAB, C, Xilinx-VHDL, Assembly</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><b>Tools & Libraries: </b>PyTorch, Sklearn,
+                    Anaconda, Unreal Engine, AirSim, Git, RapidMiner, Proteus, HTML</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><b>Soft Skills: </b>Communicative, Open to
+                    teamwork, Problem-Solver, Creative, Hardworking</li>
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Student Researcher</h3> 
-                            <div class="mb-3">Max Planck Institute for Intelligent Systems (Tübingen/Germany)</div>
-                            <p> Published papers on virtual humans. <a href="https://hmp.is.tue.mpg.de">  1) </a> Developed motion prior model for hand pose estimation. 
-                                2) Developed a generative model for Human-Object interaction. 
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2022 - current</span></div>
-                    </div>
+                <p></p>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Interests-->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Interests</h2>
+                <p>
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Artificial Intelligence Engineer</h3> 
-                            <div class="mb-3">DataBoss Security&Analytics (Ankara/Turkey)</div>
-                            <p>Developed several vision-based reinforcement learning models for autonomous outdoor navigation, working in environments with uneven terrain,
-                                 rocks, forests, and lakes. The project culminated in a successful delivery to the customer company, HAVELSAN, and provided hands-on experience 
-                                 with Unreal Engine and AirSim.</p>     
+                    In my free time, I enjoy staying active by cycling, swimming and bouldering, and I also like playing
+                    chess.</p>
 
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2021 - October 2021</span></div>
-                    </div>
+                    Through a course I attended, I discovered an interest in squash, which I have continued to enjoy. I
+                    was also an active member of the Bilkent Coffee Club.</p>
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Internship</h3> 
-                            <div class="mb-3">DataBoss Security&Analytics (Ankara/Turkey)</div>
-                            <p> Worked on the task of autonomous indoor navigation. Trained lidar-based RL navigation models for an AirSim-powered mini vehicle in realistic office environments. 
-                                Deployed trained models on a prototype car named <a href="https://www.youtube.com/watch?v=FNKmX1HtDpo"> MARC</a> equipped with a NVIDIA Jetson Xavier Kit. </p>            
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2020 - August 2020</span></div>
-                    </div>
+                    Beyond sports and social activities, I like to read, with a particular interest for 19th-century
+                    Russian literature. I spend considerable time reflecting on the similarities and differences between
+                    reinforcement learning and human decision-making processes. I am also deeply interested in
+                    psychology, especially social psychology, which complements my interest in understanding behavior
+                    and decision making.
+                </p>
+            </div>
+        </section>
+        <hr class="m-0" />
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Internship</h3>
-                            <div class="mb-3">Meta Smart Factory (Ljubljana/Slovenia)</div>
-                            <p>Worked on a predictive maintenance project for production machines. Designed specialized filters for noise
-                                 cancellation and smoothing real-time signals retrieved from the machines. Developed
-                                  filters to detect both normal and defective products.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2019 - November 2019</span></div>
-                    </div>
 
-		            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Part Time Engineer</h3>
-                            <div class="mb-3">Meta Smart Factory (Ljubljana/Slovenia)</div>
-                            <p>Increased the efficacy of ML algorithms used for estimating production machine condition and maintenance time via feature extraction.
-                                 Found the most eligible features through extracting features representing the condition of production machines. 
-                                Java, MATLAB and several libraries are used.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2019 - September 2019</span></div>
-                    </div>
+        <!-- Writings-->
+        <section class="resume-section" id="various">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Writings</h2>
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Undergraduate Researcher</h3>
-                            <div class="subheading mb-3"></div>
-                            <p>Conducted research on sample-efficient Reinforcement Learning. Co-authored 3 papers (1 first name) at <a href="https://ictai.computer.org/">IEEE ICTAI</a>.  
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"> February 2020 - August 2021</span></div>
-                    </div>
+                <div id="Page1">
+                    <p> These are some amateurly written passages, mainly about movies I've watched. I update them here
+                        irregularly. </p>
+
+                    <p><a href="./assets/pdf/Persona.pdf" target="blank">Movie: Persona </a></p>
+                    <p><a href="./assets/pdf/Lost In Translation.pdf" target="blank">Movie: Lost In Translation</a></p>
+                    <p><a href="./assets/pdf/Enes Duran-Reading The Concept of Asabiyyah in Machiavelli.pdf"
+                            target="blank">Reading Ibn Khaldun in Machiavelli: Asabiyyah, Its Relationship with Military
+                            and Religion </a></p>
+                    <p><a href="#" onclick="return show('Page4','Page1');">Movie: Raging Bull</a></p>
+                    <p><a href="#" onclick="return show('Page5','Page1');">Movie: There Will Be Blood</a></p>
+                    <p><a href="#" onclick="return show('Page6','Page1');">Quotes</a></p>
 
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Tübingen</h3>
-                            <div class="subheading mb-3">Master of Science</div>
-                            <div>Machine Learning</div>
-                            <p>GPA: 1.2</p>
-                        
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"> 2021-2024</span></div>                        
-                    </div>
 
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Bilkent University</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Electrical and Electronics Engineering</div>
-                            <p>GPA: 3.79/4.00</p>
-                        
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"> 2016-2021</span></div>                        
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Bolu Science High School</h3>
-                            <div class="subheading mb-3">Math/Science Program</div>
-                            <p>GPA: 97.97/100.00</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2012 - 2016</span></div>
-                    </div>
+                <div id="Page2" style="display:none">
+                    Work under progress.
+                    <a href="#" onclick="return show('Page1','Page2');">Return back</a>
                 </div>
-            </section>
-            <hr class="m-0" />
 
-             <!-- Awards-->
-             <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards</h2>
-                    <ul class="fa-ul mb-0">
-                        
-                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2024-2025 Deutschlandstipendium Recipient</li>
-			            
-                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2016-2020 High Honor Student (GPA: 3.79/4.00)</li>
-			            
-                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2016-Bronze Medal at TUBITAK National Science Olympiads (Physics)</li>
-			            
-                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2016-LYS University Entrance Examination (Ranked 424/~1.600.000)</li>
-			            
-                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2012-SBS High School Entrance Examination (Ranked 164/~1,000,000)</li>
-			            
-                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Semi Finalist of Bi-Fikir (Digital Transformation Hackathon)</li>
-                    </ul>
+                <div id="Page3" style="display:none">
+                    Work under progress.
+                    <a href="#" onclick="return show('Page1','Page3');">Return back</a>
                 </div>
-            </section>
 
-
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-
-                    <div class="subheading mb-3"></div>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span><b>Programming Languages: </b>Python, Java, MATLAB, C, Xilinx-VHDL, Assembly</li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span><b>Tools & Libraries: </b>PyTorch, Sklearn, Anaconda, Unreal Engine, AirSim, Git, RapidMiner, Proteus, HTML</li>
-                    <li><span class="fa-li"><i class="fas fa-check"></i></span><b>Soft Skills: </b>Communicative, Open to teamwork, Problem-Solver, Creative, Hardworking</li>
-		
-			<p></p>
-                    </ul>
+                <div id="Page4" style="display:none">
+                    Work under progress.
+                    <a href="#" onclick="return show('Page1','Page4');">Return back</a>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>    Attending a course, I found out that I am interested in squash. I was an active member in Bilkent Coffee Club. 
-                        Apart from that I voluntarily have translated several articles into Turkish for a popular science website.</p>
-                    <p class="mb-0"> I am a zealous reader, I am thrilled by 19'th century Russian literature. I spend considerable time on contemplating the common and contrastive concepts in reinforcement learning and the process of decision making. 
-		    I am also intrigued by psychology, especially social psychology.</p>
+
+                <div id="Page5" style="display:none">
+                    Work under progress.
+                    <a href="#" onclick="return show('Page1','Page5');">Return back</a>
                 </div>
-            </section>
-            <hr class="m-0" />
-           
 
-              <!-- Writings-->
-              <section class="resume-section" id="various">
-                    <div class="resume-section-content">
-                        <h2 class="mb-5">Writings</h2>
-
-                        <div id="Page1">
-                            <p> These are some amateurly written passages, mainly about movies I've watched. I update them here irregularly. </p>
-
-                            <p><a href="./assets/pdf/Persona.pdf" target="blank">Movie: Persona </a></p>
-                            <p><a href="./assets/pdf/Lost In Translation.pdf" target="blank">Movie: Lost In Translation</a></p>
-                            <p><a href="./assets/pdf/Enes Duran-Reading The Concept of Asabiyyah in Machiavelli.pdf" target="blank">Reading Ibn Khaldun in Machiavelli: Asabiyyah, Its Relationship with Military and Religion </a></p>
-                            <p><a href="#" onclick="return show('Page4','Page1');">Movie: Raging Bull</a></p>
-                            <p><a href="#" onclick="return show('Page5','Page1');">Movie: There Will Be Blood</a></p>
-                            <p><a href="#" onclick="return show('Page6','Page1');">Quotes</a></p>
-
-                          </div>
-                            
-                          <div id="Page2" style="display:none">
-                            Work under progress.
-                            <a href="#" onclick="return show('Page1','Page2');">Return back</a>
-                          </div>
-                          
-                          <div id="Page3" style="display:none">
-                            Work under progress.
-                           <a href="#" onclick="return show('Page1','Page3');">Return back</a>
-                         </div>
-
-                          <div id="Page4" style="display:none">
-                            Work under progress.
-                           <a href="#" onclick="return show('Page1','Page4');">Return back</a>
-                         </div>
-
-                          <div id="Page5" style="display:none">
-                            Work under progress.
-                            <a href="#" onclick="return show('Page1','Page5');">Return back</a>
-                         </div>
-
-                          <div id="Page6" style="display:none">
-                            <p>You truly overcome a chronic condition when you are thankful for what you have learned from it. (Prof. Haldun Ozaktas)</p>
-                           <a href="#" onclick="return show('Page1','Page6');">Return back</a>
-                         </div>
+                <div id="Page6" style="display:none">
+                    <p>You truly overcome a chronic condition when you are thankful for what you have learned from it.
+                        (Prof. Haldun Ozaktas)</p>
+                    <a href="#" onclick="return show('Page1','Page6');">Return back</a>
                 </div>
-                </section>
+            </div>
+        </section>
 
-                <hr class="m-0" />
-            	<!-- Certificates-->
-            	<section class="resume-section" id="certificates">
-                	<div class="resume-section-content">
-                    	<h2 class="mb-5">Certificates</h2>
-			
-                        <ul class="fa-ul mb-0"> 
-                            
-                            <li><span class="fa-li"><i class="fa-solid fa-award" style="color: #ff0000;"></i></span>Reinforcement Learning Specialization (Coursera)
-                            <a class="social-icon" href="https://www.coursera.org/account/accomplishments/specialization/certificate/MRJ2S5FZC8RR"><i class="fas fa-link"></i></a></li>
-                    
-                            <li><span class="fa-li"><i class="fa-solid fa-award"></i></span> Digital Signal Processing (Coursera) 
-			                <a class="social-icon" href="https://www.coursera.org/account/accomplishments/specialization/certificate/MRJ2S5FZC8RR"><i class="fas fa-link"></i></a></li>
-  
-                            <li><span class="fa-li"><i class="fa-solid fa-award"></i></span>Game Theory (Coursera)
-                            <a class="social-icon" href="https://www.coursera.org/account/accomplishments/certificate/Q9TR9NV96CHQ"><i class="fas fa-link"></i></a></li>
+        <hr class="m-0" />
+        <!-- Certificates-->
+        <section class="resume-section" id="certificates">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Certificates</h2>
 
-                            <li><span class="fa-li"><i class="fa-solid fa-award"></i></span>Mastering Digital Twins (Coursera)
-                            <a class="social-icon" href="https://www.coursera.org/account/accomplishments/certificate/A2Q4WYAXJ9XR"><i class="fas fa-link"></i></a></li>
-                                    
-                            <li><span class="fa-li"><i class="fa-solid fa-award"></i></span>Signal Processing Problems, Solved in Matlab and Python (Udemy)
-                            <a class="social-icon" href="https://www.udemy.com/certificate/UC-Q9L8VERG/"><i class="fas fa-link"></i></a></li>
-                                        
-                            <li><span class="fa-li"><i class="fa-solid fa-award"></i></span>Image & Signal Processing Conference (TED University)</li>
-                                        
-                            <li><span class="fa-li"><i class="fa-solid fa-award"></i></span>Interpersonal Communication (Bilkent PGDM)</li>
-                            
-                        </ul>
+                <ul class="fa-ul mb-0">
 
-                </div>
-            </section>
-            <hr class="m-0" />
-        </div>
+                    <li><span class="fa-li"><i class="fa-solid fa-award"
+                                style="color: #ff0000;"></i></span>Reinforcement Learning Specialization (Coursera)
+                        <a class="social-icon"
+                            href="https://www.coursera.org/account/accomplishments/specialization/certificate/MRJ2S5FZC8RR"><i
+                                class="fas fa-link"></i></a>
+                    </li>
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+                    <li><span class="fa-li"><i class="fa-solid fa-award"></i></span> Digital Signal Processing
+                        (Coursera)
+                        <a class="social-icon"
+                            href="https://www.coursera.org/account/accomplishments/specialization/certificate/MRJ2S5FZC8RR"><i
+                                class="fas fa-link"></i></a>
+                    </li>
+
+                    <li><span class="fa-li"><i class="fa-solid fa-award"></i></span>Game Theory (Coursera)
+                        <a class="social-icon"
+                            href="https://www.coursera.org/account/accomplishments/certificate/Q9TR9NV96CHQ"><i
+                                class="fas fa-link"></i></a>
+                    </li>
+
+                    <li><span class="fa-li"><i class="fa-solid fa-award"></i></span>Mastering Digital Twins (Coursera)
+                        <a class="social-icon"
+                            href="https://www.coursera.org/account/accomplishments/certificate/A2Q4WYAXJ9XR"><i
+                                class="fas fa-link"></i></a>
+                    </li>
+
+                    <li><span class="fa-li"><i class="fa-solid fa-award"></i></span>Signal Processing Problems, Solved
+                        in Matlab and Python (Udemy)
+                        <a class="social-icon" href="https://www.udemy.com/certificate/UC-Q9L8VERG/"><i
+                                class="fas fa-link"></i></a>
+                    </li>
+
+                    <li><span class="fa-li"><i class="fa-solid fa-award"></i></span>Image & Signal Processing Conference
+                        (TED University)</li>
+
+                    <li><span class="fa-li"><i class="fa-solid fa-award"></i></span>Interpersonal Communication (Bilkent
+                        PGDM)</li>
+
+                </ul>
+
+            </div>
+        </section>
+        <hr class="m-0" />
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
